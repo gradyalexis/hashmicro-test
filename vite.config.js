@@ -1,6 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
-import { viteSingleFile } from 'vite-plugin-singlefile'
 import vue from '@vitejs/plugin-vue'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { createHtmlPlugin  } from 'vite-plugin-html';
@@ -8,7 +7,6 @@ import { createHtmlPlugin  } from 'vite-plugin-html';
 export default defineConfig(({ mode }) => ({
   plugins: [
     vue(),
-    // viteSingleFile({ removeViteModuleLoader: true }), // Inline all assets into a single HTML file
     createHtmlPlugin({
       minify: true,
     }),
