@@ -1,0 +1,31 @@
+{
+  "name": "hashmicro-test",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && inline-source --root dist dist/index.html",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuetify": "^3.7.0-beta.1",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.21",
+    "inline-source": "^8.0.3",
+    "postcss": "^8.5.3",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "vite": "^6.2.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-html": "^3.2.2",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-singlefile": "^2.2.0",
+    "vite-plugin-vue-devtools": "^7.7.2"
+  }
+}
